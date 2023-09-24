@@ -5,22 +5,38 @@ namespace ConsoleApp13
     {
         static void Main(string[] args)
         {
+            using System;
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
             int res = a + b;
             string a1 = a.ToString();
             string b1 = b.ToString();
             string ress = res.ToString();
-            int ax = 10 - a1.Length;
-            Console.SetCursorPosition(ax, 3);
-            Console.WriteLine(a);
-            int bx = 10 - b1.Length;  
-            Console.SetCursorPosition(bx, 4);
-            Console.WriteLine(b);
+            while (a1[^1] != a1[9])
+            {
+                a1 = " " + a1;
+            }
+            while (b1[^1] != b1[9])
+            {
+                b1 = " " + b1;    
+            }
+            while (ress[^1] != ress[9])
+            {
+                ress = " " + ress;  
+            }
+            Console.WriteLine(a1);
+            Console.WriteLine(b1);
             Console.WriteLine("----------");
-            int resx = 10 - ress.Length;
-            Console.SetCursorPosition(resx, 6);
             Console.WriteLine(ress);
+        }
+    }
+}
         }
     }
 }
