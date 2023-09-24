@@ -1,11 +1,4 @@
 ﻿using System;
-namespace ConsoleApp13
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            using System;
 namespace ConsoleApp15
 {
     internal class Program
@@ -34,9 +27,6 @@ namespace ConsoleApp15
             Console.WriteLine(b1);
             Console.WriteLine("----------");
             Console.WriteLine(ress);
-        }
-    }
-}
         }
     }
 }
